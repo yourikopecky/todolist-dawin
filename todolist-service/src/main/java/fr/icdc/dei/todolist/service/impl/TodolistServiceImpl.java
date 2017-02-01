@@ -90,7 +90,7 @@ public class TodolistServiceImpl implements TodolistService {
 		int finishId = TaskStatusEnum.FINISHED.getValue();
 
 		Calendar calendar = Calendar.getInstance();
-		calendar.set(Calendar.DAY_OF_MONTH, -7);
+		calendar.set(Calendar.WEEK_OF_MONTH, -1);
 		Date todayMinusSevenDays = calendar.getTime();
 		Date closedDate = task.getClosedDate();
 		
