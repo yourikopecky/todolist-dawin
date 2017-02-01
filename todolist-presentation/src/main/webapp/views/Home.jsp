@@ -14,8 +14,8 @@
 		    <input type="submit" value="Finir" />
 		</form>
      	<div>${task.name} - ${task.status.name}</div>
-     	Date de début : <fmt:formatDate value="${task.beginDate}" pattern="dd-MM-yyyy HH:mm:ss" /><br>
-     	Date de fin : <fmt:formatDate value="${task.closedDate}" pattern="dd-MM-yyyy HH:mm:ss" /><hr>
+     	Date de début : <fmt:formatDate value="${task.beginDate}" pattern="dd-MM-yyyy" /><br>
+     	Date de fin : <fmt:formatDate value="${task.closedDate}" pattern="dd-MM-yyyy" /><hr>
 	 </c:forEach>
 </body>
 </html>
